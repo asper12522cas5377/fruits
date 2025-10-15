@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family:'Times New Roman', Times, serif;
+}
+/* nav table */
+.nav-table
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 50px;
+    background-color: greenyellow;
+    gap: 20px;
+    margin-left: 50px;
+    align-items: center;
+    border-radius: 30px 50px 40px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+.nav-table i
+{
+    color: red;
+}
+.nav-table .address
+{
+    padding-left: 30px;
+}
+.nav-table .policy
+{
+    padding-right: 20px;
+}
+
+/* navbar */
+nav
+{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+nav h1
+{
+    color: yellowgreen;
+    font-size: 30px;
+}
+.nav-links ul
+{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.nav-links ul a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+}
+.nav-links ul a:hover
+{
+    color: orangered;
+    text-decoration: underline;
+}
+/* .active  
+{
+color:rgb(red, green, blue);
+ } */
+.nav-icon
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    margin-right: 40px;
+    color:yellowgreen;
+}
+.nav-icon i:hover
+{
+    color: orangered;
+}
+/* main page */
+.main
+{
+    background-image: url('images/hero-img.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.content .h1
+{
+    font-size: 50px;
+}
+.btn
+{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 30px;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.btn div
+{
+    justify-content: flex-end;
+    background-color: rgb(22, 231, 22);
+    height: 28px;
+    /* width: 50px; */
+    border-radius: 30px;
+    padding: 5px;
+}
+.btn div:hover
+{
+  background-color: orangered;  
+}
+/* icon section */
+.main-icon
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 70px 50px;
+}
+.one
+{
+    width: 80px;
+    height: 60px;
+    background-color:yellow;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    margin-left: 70px;
+}
+.icon
+{
+  /* display: flex; */
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-shadow: 5px;
+  margin: 10px;
+  width: 20%;
+  height: 250px;
+  padding: 20px;
+  background-color:rgb(133, 235, 16);
+  
+}
+.icon h4,p
+{
+ padding-top:20px;
+}
+
+/* organic-food */
+.organic-food
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.button button
+{
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    width: 150px;
+}
+.all
+{
+    background-color: greenyellow;
+    color: #fff;
+}
+
+/* organic-food gallery */
+.gallery
+{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 5px;
+    margin: 30px;
+    flex-wrap: wrap;
+    min-width: 25%;
+    margin-top: 70px;
+}
+.gallery.card
+{
+    border: 2px solid rgb(28, 28, 168);
+    text-align: center;
+    border-radius: 5px;
+    width: 20%;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.card.img
+{
+    background-position: center;
+    background-size:cover;
+    /* min-height:250px; */
+}
+.card.img-1
+{
+    background-image: url('images/fruite-item-1.jpg');
+    height: 200px;
+    width: 260px;
+}
+.card.img-2
+{
+    background-image: url('images/fruite-item-2.jpg');
+    height: 200px;
+    width: 260px;
+}
+.card.img-3
+{
+    background-image: url('images/fruite-item-3.jpg');
+    height: 200px;
+    width: 260px;
+}
+.card.img-4
+{
+    background-image: url('images/fruite-item-4.jpg');
+    height: 200px;
+    width: 260px;
+}
+.card.img-5
+{
+    background-image: url('images/fruite-item-5.jpg');
+    height: 200px;
+    width: 260px;
+}
+.card.img-6
+{
+    background-image: url('images/fruite-item-3.jpg');
+    height: 200px;
+    width: 260px;
+}
+.card.img-7
+{
+    background-image: url('images/fruite-item-6.jpg');
+    height: 200px;
+    width: 260px;
+}
+.card.img-8
+{
+    background-image: url('images/fruite-item-2.jpg');
+    height: 200px;
+    width: 260px;
+}
+.text
+{
+    padding: 30px;
+}
+.cart
+{
+    padding: 5px;
+    margin-left: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    color:rgba(7, 233, 18, 0.87);
+    background-color: #fff;
+    border: 2px solid black;
+}
+.img.top
+{
+    font-size: 16px;
+    width: 80px;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 5px;
+    background-color: rgb(141, 224, 17);
+    color: orange;
+    border:transparent;
+    margin-left: -150px;
+}
+.card:hover
+{
+    transform: scale(1.1);
+    transition: 1.0s;
+    box-shadow: 2px 2px 5px orangered;
+    /* box-shadow: 2px rgb(24, 214, 7); */
+}
+/* feature product */
+.posi
+{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    column-gap: 5px;
+    margin: 100px 50px;
+}
+.box
+{
+ border: 3px solid greenyellow;
+ position: relative;
+ border-radius: 10px;
+}
+.box-1
+{
+    border:3px solid orange;
+}
+.box-2
+{
+    border: 3px solid lightgreen;
+}
+.off
+{
+    text-align: center;
+    background-color:green;
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    bottom: 50px;
+    left: 90px;
+    border-radius: 10px;
+}
+.off-1
+{
+    background-color: rgb(11, 231, 29);
+}
+.off-2
+{
+    background-color: orange;
+}
+.posi img
+{
+    height: 300px;
+    width: 100%;
+}
+.color
+{
+    height: 100px;
+    background-color: rgb(141, 206, 10);
+}
+.color-1
+{
+    background-color: rgb(6, 42, 42);
+}
+.color-2
+{
+    background-color:rgb(37, 218, 70);
+}
+.off p
+{
+    color: #fff;
+}
+/* organic vegetables */
+.fresh-head
+{
+    margin-left: 30px;
+}
+.arrow
+{
+    margin-right: 80px;
+    height: 20px;
+    text-align: end;
+}
+.arrow i
+{
+    height: 40px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    background-color: #fff;
+    color: orangered;
+    border: 2px solid rgb(248, 204, 6);
+    border-radius: 20px;
+    margin-left: 5px;
+}
+.arrow i:hover 
+{
+ color: #fff;
+ background-color: rgb(248, 204, 6);
+}
+.img.left 
+{
+    margin-top:100px;
+    margin-left:200px;
+    /* width: 90px; */
+ } 
+.img.veg-1
+{
+    background-image: url('images/vegetable-item-1.jpg');
+    background-position: center;
+    height: 300px;
+    width: 300px;
+}
+.img.veg-2
+{
+    background-image: url('images/vegetable-item-6.jpg');
+    background-position: center;
+    height: 300px;
+    width: 300px;
+}
+.img.veg-3
+{
+    background-image: url('images/vegetable-item-4.jpg');
+    height: 300px;
+    background-position: center;
+    width: 300px;
+}
+.img.veg-4
+{
+    background-image: url('images/vegetable-item-5.jpg');
+    height: 300px;
+    background-position: center;
+    width: 300px;
+}
+/* fresh eotic frutis */
+.back
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    padding: 20px;
+    margin-top: 40px;
+}
+.back.part-1
+{
+    padding: 50px;
+    font-size: 30px;
+}
+.part-1 button
+{
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 30px;
+    height: 50px;
+    font-size: 20px;
+}
+.back h1
+{
+    color: #fff;
+}
+.rup
+{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    border: 2px solid;
+    border-radius: 70px;
+    width:130px;
+    position: absolute;
+    right: 500px;
+    background-color: #fff;
+}
+.one-1
+{ 
+    font-size: 50px;
+    padding: 20px;
+}
+.amount
+{
+ font-size: medium;
+ padding-top: 15px;
+}
+/* best products */
+.center
+{
+ text-align: center;
+ color: yellowgreen;
+ margin-top: 50px;
+ font-size: 50px;
+}
+.center-1
+{
+    /* background-color: yellowgreen; */
+    text-align: center;
+    font-size:25px;
+    margin-bottom: 5px;
+}
+.seller
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-left: 20px;
+}
+.product
+{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 3px;
+    border: 2px solid transparent;
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 30%;
+}
+.orange img
+{ 
+    /* width: 100%; */
+    height: 200px;
+    border-radius: 150px;
+}
+.doller
+{  
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    /* height: 50px; */
+    /* border-radius: 150px; */
+}
+.doller button
+{
+    margin-top: 10px;
+    margin-left: -10px;
+}
+.seller-1
+{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: 75px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.product-1
+{
+    height: 100%;
+    padding: 3px;
+    border-radius: 10px;
+    width: 30%;
+}
+.orange-1 img
+{
+ height: 200px;
+ width: 300px;
+ border-radius: 15px;
+}
+.doller-1
+{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+/* profile */
+.profile
+{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    text-align: center;
+    margin: 70px;
+    margin-left: 130px;
+}
+.pro
+{
+    background-color: #fff;
+    gap: 10px;
+    border: 1px solid transparent;
+    margin: 20px;
+    width: 20%;
+}
+.pro p,h3
+{
+    color: orange;
+}
+.pro p
+{
+    font-size: 40px;
+}
+/* testimonial */
+.our-1
+{
+    text-align: center;
+}
+.testimonial
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.client
+{
+    width: 45%;
+    margin-top: 50px;
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+.client-img
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+.client-content
+{ 
+    /* text-align: center; */
+    margin-left:-90px;
+    padding: 5px;
+    /* height: 25px; */
+}
+.quotes
+{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-right: -150px;
+    color:rgb(247, 165, 12);
+}
+.s1
+{
+    background-color:yellowgreen;
+}
+/* footer */
+.footer-main
+{
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-evenly;
+    background-color:gray;
+
+}
+.footer-head
+{
+    padding-right: 170px;
+}
+.footer-head h1
+{
+    color: rgb(247, 165, 12);
+    font-size: 55px;
+    font-weight: 20px;
+}
+.footer-head h5
+{
+    color: #ff9800;
+    font-size: 20px;
+    font-weight: 10px;
+}
+.search
+{
+    margin-top: 20px;
+}
+.footer-icons
+{
+    padding-left: 100px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #ff9800;
+}
+.footer-main h2
+{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer-1
+{
+    padding: 10px;
+}
+.footer-2
+{
+    padding: 10px;
+}
+.footer-3
+{
+    padding: 10px;
+}
+.footer-4
+{
+    padding:10px;
+}
+.btn-1
+{
+    background-color: white;
+    color: rgb(11, 231, 29);
+    border-radius: 50px;
+    border-color: orange;
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 80px;
+}
+.a1
+{
+    background-color: yellowgreen;
+}
+</style>
+<body>
+    <div class="nav-table">
+        <div class="address">
+        <p><i class="fa-solid fa-location-dot"></i>125 Street,Salam Road,Namakkal. <i class="fa-solid fa-envelope"></i>muthukumar795288@gmail.com</p>
+        </div>
+        <div class="policy">
+        <p>Privacy Policy/Terms of Use/Sales and Refunds</p>
+        </div>
+    </div>
+    <!-- nave bar -->
+    <nav>
+        <div class="logo"><h1>Fruitables</h1></div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Shop details</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    <div class="nav-icon">
+   <i class="fa-solid fa-magnifying-glass"></i>
+   <i class="fa-solid fa-bag-shopping"></i>
+   <i class="fa-solid fa-user"></i>
+    </div>
+    </nav>
+<!-- main page -->
+<div class="main">
+    <div class="content">
+        <p class="h1">100% Organic Foods</p>
+        <h1 class="h1">Organic Veggies&<br>Fruits Foods</h1>
+        <button class="btn">Search<div>Submit Now</div></button>
+    </div>
+    <div class="img">
+        <img src="images/hero-img-1.png" alt="">
+    </div>
+</div>
+<!-- icon section -->
+<div class="main-icon">
+    <div class="icon">
+        <div class="one"><i class="fa-solid fa-bag-shopping"></i></div>
+        <h4>Free Shipping</h4>
+        <p>Free on order over$300</p>
+</div>
+
+    <div class="icon">
+        <div class="one"><i class="fa-solid fa-user"></i></div>
+        <h4>Security Payment</h4>
+        <p>100% security payment</p>
+        </div>
+
+        <div class="icon">
+        <div class="one"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+        <h4>30 Day Return</h4>
+        <p>30 day money gurantee</p>
+        </div>
+
+        <div class="icon">
+        <div class="one"><i class="fa-solid fa-phone"></i></div>
+        <h4>24/7 support</h4>
+        <p>support every time fast</p>
+    </div>
+</div>
+<!-- organic good head -->
+<div class="organic-food">
+    <div class="our">
+    <h1>Our Organic Products</h1>
+    </div>
+    <div class="button">
+        <button class="all">All Products</button>  
+        <button>Vegetables</button> 
+        <button>Fruits</button>
+        <button>Bread</button>
+        <button>Meat</button>
+     </div>
+</div>
+<!-- organi food gallery -->
+<div class="gallery">
+    <div class="card">
+        <div class=" card img img-1">
+        <button class="top">Fruits</button>
+        </div>
+        <div class="text">
+        <h3>orange</h3>
+        <p>Lorem ipsum dolor sit, amet<br> 
+        Odio asperiores delectus quam<br> 
+        vitae sed dicta sit dolores<br> 
+        obcaecati reprehenderit</p>
+        <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p>
+        </div>
+     </div>
+    <div class="card">
+        <div class=" card img img-2">
+        <button class="top">Fruits</button>
+        </div>
+        <div class="text">
+        <h3>Raspberries</h3>
+        <p>Lorem ipsum dolor sit, amet<br>
+        Odio asperiores delectus quam<br> 
+        vitae sed dicta sit dolores<br> 
+        obcaecati reprehenderit</p>
+        <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+    </div>
+
+    </div>
+    <div class="card">
+        <div class="card img img-3">
+        <button class="top">Fruits</button>
+        </div>
+        <div class="text">
+        <h3>Banana</h3>
+        <p>Lorem ipsum dolor sit, amet<br> 
+        Odio asperiores delectus quam<br> 
+        vitae sed dicta sit dolores<br> 
+        obcaecati reprehenderit</p>
+        <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+    </div>
+
+    </div>
+      <div class="card">
+        <div class="card img img-4">
+        <button class="top">Fruits</button>
+        </div>
+        <div class="text">
+        <h3>Apricots</h3>
+        <p>Lorem ipsum dolor sit, amet<br> 
+        Odio asperiores delectus quam<br> 
+        vitae sed dicta sit dolores<br> 
+        obcaecati reprehenderit</p>
+        <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+      </div>
+
+    </div>
+    <div class="card">
+        <div class="card img img-5">
+        <button class="top">Fruits</button>
+        </div>
+        <div class="text">
+        <h3>Grapes</h3>
+        <p>Lorem ipsum dolor sit, amet<br> 
+        Odio asperiores delectus quam<br> 
+        vitae sed dicta sit dolores<br> 
+        obcaecati reprehenderit</p>
+        <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+      </div>
+
+    </div>
+    <div class="card">
+        <div class="card img img-6">
+        <button class="top">Fruits</button>
+        </div>
+        <div class="text">
+        <h3>Banana</h3>
+        <p>Lorem ipsum dolor sit, amet<br> 
+        Odio asperiores delectus quam<br> 
+        vitae sed dicta sit dolores<br>
+        obcaecati reprehenderit</p>
+        <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+      </div>
+
+    </div>
+    <div class="card">
+        <div class="card img img-7">
+        <button class="top">Fruits</button>
+        </div>
+        <div class="text">
+        <h3>Apple</h3>
+        <p>Lorem ipsum dolor sit, amet<br> 
+        Odio asperiores delectus quam<br> 
+        vitae sed dicta sit dolores<br> 
+        obcaecati reprehenderit</p>
+        <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+      </div>
+
+    </div>
+    <div class="card">
+        <div class="card img img-8">
+        <button class="top">Fruits</button>
+        </div>
+        <div class="text">
+        <h3>Raspberries</h3>
+        <p>Lorem ipsum dolor sit, amet<br> 
+            Odio asperiores delectus quam<br> 
+            vitae sed dicta sit dolores<br>
+            obcaecati reprehenderit</p>
+        <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+      </div>
+
+     </div>
+    </div>
+<!-- position -->
+    <div class="posi">
+        <div class="box">
+            <img src="images/featur-1.jpg" alt="">
+            <div class="color">
+            </div>
+            <div class="off">
+                <p>Fresh Apples</p>
+                <h4>20% OFF</h4>
+            </div>
+        </div>
+
+        <div class="box box-1">
+            <img src="images/featur-2.jpg" alt="">
+            <div class="color color-1">
+            </div>
+            <div class="off off-1">
+                <p>Tasty Fruits</p>
+                <h4>Free Delivery</h4>
+            </div>
+        </div>
+        <div class="box box-2">
+            <img src="images/featur-3.jpg" alt="">
+            <div class="color color-2">
+            </div>
+            <div class="off off-2">
+                <p>Exotic Vegetables</p>
+                <h4>Discount 30$</h4>
+            </div>
+        </div>
+    </div>
+<!-- fresh vegtables -->
+    <h1 class="fresh-head">Fresh Organic Vegetables</h1>
+    <p class="arrow"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-arrow-left"></i></p>
+     
+    <div class="gallery">
+        <div class="card">
+            <div class="img veg-1">
+            <button class="top left">Vegetables</button>
+            </div>
+            <div class="text">
+                <h3>Tomato</h3>
+                <p>Lorem ipsum dolor sit amet<br>
+                Dignissimos veniam fugiat<br> 
+                non magnam inventore nostrum<br>
+                quisquam facilis est illum</p>
+                <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="img veg-2">
+            <button class="top left">Vegetables</button>
+            </div>
+            <div class="text">
+                <h3>Parsely</h3>
+                <p>Lorem ipsum dolor sit amet<br>
+                     Dignissimos veniam fugiat<br>
+                     non magnam inventore nostrum<br> 
+                     quisquam facilis est illum</p>
+                <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="img veg-3">
+            <button class="top left">Vegetables</button>
+            </div>
+            <div class="text">
+                <h3>Bell Papper</h3>
+                <p>Lorem ipsum dolor sit amet<br>
+                     Dignissimos veniam fugiat<br>
+                     non magnam inventore nostrum<br>
+                      quisquam facilis est illum</p>
+                <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="img veg-4">
+            <button class="top left">Vegetables</button>
+            </div>
+            <div class="text">
+                <h3>Potatoes</h3>
+                <p>Lorem ipsum dolor sit amet<br> 
+                    Dignissimos veniam fugiat<br>
+                    non magnam inventore nostrum<br>
+                    quisquam facilis est illum</p>
+                <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
+            </div>
+        </div>
+<!-- fresh eotic frutis -->
+        <div class="back">
+            <div class="part-1">
+                <h1>Fresh Exotic Frutis</h1>
+                <h2>in our store</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Possimus excepturi quisquam, alias incidunt doloremque <br>
+                soluta ullam neque itaque unde quaerat a vero amet <br>
+                aspernatur est adipisci. Et repellat autem accusantium?</p>
+                <button>BUY</button>            
+            </div>
+        <div class="part-2">
+        <img src="images/baner-1.png" alt="">
+        </div>
+
+        <div class="rup">
+            <div class="one-1">1</div>
+            <div class="amount">
+                <p>50$<br>kg</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- best seller -->
+    <h1 class="center-1">BestSeller Products</h1>
+    <p class="center-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Iusto, necessitatibus similique sint fuga adipisci enim eius,<br>
+    porro molestiae quaerat, harum pariatur mollitia sed! Dicta saepehcxsimilique sed, consequuntur obcaecati corrupti!</p>
+    <div class="seller">
+        
+        <div class="product">
+            <div class="orange">
+            <img src="images/best-product-1.jpg" alt="">
+            </div>
+            <div class="doller">
+            <p>Organic Tomoto</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <p>3.12$</p> 
+            <button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>  
+        </div>
+    </div>
+    <div class="product">
+            <div class="orange">
+            <img src="images/best-product-2.jpg" alt="">
+            </div>
+            <div class="doller">
+            <p>Organic Tomoto</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <p>3.12$</p> 
+            <button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>  
+        </div>
+    </div>
+    <div class="product">
+            <div class="orange">
+            <img src="images/best-product-3.jpg" alt="">
+            </div>
+            <div class="doller">
+            <p>Organic Tomoto</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <p>3.12$</p> 
+            <button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>  
+        </div>
+    </div>
+    <div class="product">
+            <div class="orange">
+            <img src="images/best-product-4.jpg" alt="">
+            </div>
+            <div class="doller">
+            <p>Organic Tomoto</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <p>3.12$</p> 
+            <button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>  
+        </div>
+    </div>
+    <div class="product">
+            <div class="orange">
+            <img src="images/best-product-5.jpg" alt="">
+            </div>
+            <div class="doller">
+            <p>Organic Tomoto</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <p>3.12$</p> 
+            <button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>  
+        </div>
+    </div>
+    <div class="product">
+            <div class="orange">
+            <img src="images/best-product-6.jpg" alt="">
+            </div>
+            <div class="doller">
+            <p>Organic Tomoto</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <p>3.12$</p> 
+            <button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>  
+        </div>
+      </div>
+    </div>
+    <div class="seller-1">
+            <div class="product-1">
+            <div class="orange-1">
+            <img src="images/best-product-1.jpg" alt="">
+            </div>
+            <div class="doller-1">
+            <p>Organic Tomoto</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <p>3.12$</p> 
+            <button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>  
+        </div>
+    </div>
+    <div class="product-1">
+            <div class="orange-1">
+            <img src="images/best-product-5.jpg" alt="">
+            </div>
+            <div class="doller-1">
+            <p>Organic Tomoto</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <p>3.12$</p> 
+            <button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>  
+        </div>
+    </div>
+    <div class="product-1">
+            <div class="orange-1">
+            <img src="images/best-product-2.jpg" alt="">
+            </div>
+            <div class="doller-1">
+            <p>Organic Tomoto</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <p>3.12$</p> 
+            <button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>  
+        </div>
+    </div>
+     <div class="product-1">
+            <div class="orange-1">
+            <img src="images/best-product-6.jpg" alt="">
+            </div>
+            <div class="doller-1">
+            <p>Organic Tomoto</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <p>3.12$</p> 
+            <button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>  
+        </div>
+    </div>
+    </div>
+<!-- profile -->
+    <div class="profile">
+        <div class="pro">
+            <p><i class="fa-solid fa-users"></i></p>
+            <h3>Satisfied<br>Customers</h3>
+            <h2>1960</h2>
+        </div>
+
+        <div class="pro">
+            <p><i class="fa-solid fa-users"></i></p>
+            <h3>Qualtiy of<br>Service</h3>
+            <h2>90%</h2>
+        </div>
+         
+         <div class="pro">
+            <p><i class="fa-solid fa-users"></i></p>
+            <h3>Qualtiy<br>Certificates</h3>
+            <h2>50</h2>
+        </div>
+
+         <div class="pro">
+            <p><i class="fa-solid fa-users"></i></p>
+            <h3>Available<br>Products</h3>
+            <h2>700</h2>
+        </div>
+    </div>
+<!-- our testimonial -->
+    <h3 class="our-1">Our Testimonial</h3>
+    <h1 class="our-1">Our Client Saying!</h1>
+    <p class="arrow"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-arrow-left"></i></p>
+    <div class="testimonial">
+    <div class="client">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit possimus vero eius amet eum,dolorum architecto <br>
+    doloremque sint sit cupiditate inventore. Voluptatem cupiditate laboriosam, eius nulla minima veniam deleniti repellat.
+    <hr>
+    <div class="client-img">
+
+    <img src="images/testimonial-1.jpg" alt="">
+    <div class="client-content">
+        <h5>Monika</h5>
+        <h5>Profession</h5>
+        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 
+        <i class="fa-solid fa-star"></i></p>
+    </div>
+    <div class="quotes">
+    <i class="fa-solid fa-quote-right"></i>
+    </div> 
+    </div> 
+   </div>
+   <div class="client">
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi ipsum magni consectetur vitae perferendis perspiciatis, nam<br>
+   blanditiis amet dolore ab impedit harum saepe possimus quibusdam aperiam autem nesciunt a. 
+   <hr>
+   <div class="client-img">
+     <img src="images/testimonial-1.jpg" alt="">
+    <div class="client-content">
+        <h5>Monika</h5>
+        <h5>Profession</h5>
+        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 
+        <i class="fa-solid fa-star"></i></p>
+    </div>
+    <div class="quotes">
+    <i class="fa-solid fa-quote-right"></i>
+    </div> 
+    </div>
+   </div>
+ </div>
+ <br>
+ <br>
+  <footer>
+    <div class="footer-main">
+    <div class="footer-head">
+    <h1>FRUITABLES</h1>
+    <h5>Fresh Products</h5>  
+    </div>
+    <div  class="serach">
+    <button class="btn">search<div>submit now</div></button>
+    </div>
+    <div class="footer-icons">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+    </div>
+    <div class="footer-main">
+        <div class="footer-1">
+            <h2>Why People Like As</h2>
+            <p>typesetting,remaining essentially unchanged</p>
+            <p>it was popularised in the</p>
+            <p>1960 with the like aldus pagemaker</p>
+            <p>including of lorem ipsum.!</p><br><br>
+            <button class="btn-1">Read More</button>
+        </div>
+        <div class="footer-2">
+            <h2>Shop Info</h2>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Condition</p>
+            <p>Return Policy</p>
+            <p>FAQs & Help</p>
+            <br>
+        </div>
+        <div class="footer-3">
+            <h2>Account</h2>
+            <p>My Account</p>
+            <p>Shop details</p>
+            <p>Shopping Card</p>
+            <p>Whislist</p>
+            <p>Order History</p>
+        </div>
+        <div class="footer-4">
+            <h2>Contact</h2>
+            <p>Address:125 salam road,Nkl-637405</p>
+            <p>Email:muthukumar795288@gmail.com</p>
+            <p>Phone:+91 1234567890</p>
+            <p>Payment accepted</p>
+        </div>
+    </div>
+    <div class="a1">
+    <p><center>@copyright2025.Fruits & Vegetables</center></p>
+    </div>
+</footer>
+</body>
+</html>
