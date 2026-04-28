@@ -141,20 +141,17 @@ color:rgb(red, green, blue);
     flex-wrap: wrap;
     padding: 70px 50px;
 }
-.one
+.one i
 {
     width: 80px;
     height: 60px;
     background-color:yellow;
     border-radius: 50%;
-    text-align: center;
     padding-top: 10px;
     font-size: 30px;
-    margin-left: 70px;
 }
 .icon
 {
-  /* display: flex; */
   border: 2px solid transparent;
   border-radius: 5px;
   box-shadow: 5px;
@@ -203,13 +200,12 @@ color:rgb(red, green, blue);
     min-width: 25%;
     margin-top: 70px;
 }
-.gallery.card
+.card
 {
-    border: 2px solid rgb(28, 28, 168);
-    text-align: center;
+    border: 2px solid green;
     border-radius: 5px;
-    width: 20%;
-    flex-wrap: wrap;
+    width: 20.5%;
+    /* flex-wrap: wrap; */
     margin-bottom: 30px;
 }
 .card.img
@@ -217,53 +213,55 @@ color:rgb(red, green, blue);
     background-position: center;
     background-size:cover;
     /* min-height:250px; */
+        margin-bottom: -15px;
+
 }
 .card.img-1
 {
     background-image: url('Fruits/fruite-item-1.jpg');
-    height: 200px;
+    height: 250px;
     width: 260px;
 }
 .card.img-2
 {
     background-image: url('Fruits/fruite-item-2.jpg');
-    height: 200px;
+    height: 250px;
     width: 260px;
 }
 .card.img-3
 {
     background-image: url('Fruits/fruite-item-3.jpg');
-    height: 200px;
+    height: 250px;
     width: 260px;
 }
 .card.img-4
 {
     background-image: url('Fruits/fruite-item-4.jpg');
-    height: 200px;
+    height: 250px;
     width: 260px;
 }
 .card.img-5
 {
     background-image: url('Fruits/fruite-item-5.jpg');
-    height: 200px;
+    height: 250px;
     width: 260px;
 }
 .card.img-6
 {
     background-image: url('Fruits/fruite-item-3.jpg');
-    height: 200px;
+    height: 250px;
     width: 260px;
 }
 .card.img-7
 {
     background-image: url('Fruits/fruite-item-6.jpg');
-    height: 200px;
+    height: 250px;
     width: 260px;
 }
 .card.img-8
 {
     background-image: url('Fruits/fruite-item-2.jpg');
-    height: 200px;
+    height: 250px;
     width: 260px;
 }
 .text
@@ -280,24 +278,21 @@ color:rgb(red, green, blue);
     background-color: #fff;
     border: 2px solid black;
 }
-.img.top
+.top
 {
     font-size: 16px;
     width: 80px;
-    border-radius: 15px;
+    border-radius: 12px;
     padding: 3px;
     margin: 5px;
-    background-color: rgb(141, 224, 17);
-    color: orange;
+    background-color: orange;
+    color: white;
     border:transparent;
-    margin-left: -150px;
 }
 .card:hover
 {
     transform: scale(1.1);
-    transition: 1.0s;
-    box-shadow: 2px 2px 5px orangered;
-    /* box-shadow: 2px rgb(24, 214, 7); */
+    transition: 0.5s;
 }
 /* feature product */
 .posi
@@ -703,6 +698,227 @@ color:rgb(red, green, blue);
 {
     background-color: yellowgreen;
 }
+
+
+
+/* ============================= */
+/* MOBILE (0px - 576px) */
+/* ============================= */
+
+@media (max-width: 576px) {
+
+    .nav-table {
+        flex-direction: column;
+        height: auto;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-icon {
+        margin-right: 0;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .one{
+        margin-right: 00px;
+    } 
+
+    .img img{
+        width: 90%;
+    }
+
+    .content .h1 {
+        font-size: 30px;
+    }
+
+    .btn {
+        margin: auto;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .organic-food {
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px;
+    }
+
+    .gallery .card {
+        width: 100%;
+    }
+
+    .posi {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .img.left {
+        margin-left: 0;
+    }
+
+    .seller {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .seller-1 {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .product-1 {
+        width: 100%;
+    }
+
+    .profile {
+        flex-direction: column;
+        margin: 20px;
+        width: 100%;
+    }
+
+    .pro {
+        width: 100%;
+    }
+
+    .testimonial {
+        flex-direction: column;
+    }
+
+    .client {
+        width: 100%;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-head {
+        padding-right: 0;
+    }
+
+    .footer-icons {
+        padding-left: 0;
+    }
+}
+
+
+/* ============================= */
+/* TABLET (577px - 992px) */
+/* ============================= */
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+    .nav-table {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon {
+        width: 45%;
+    }
+
+    .gallery .card {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .posi {
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 45%;
+    }
+
+    .product-1 {
+        width: 45%;
+    }
+
+    .profile {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .pro {
+        width: 45%;
+    }
+
+    .testimonial {
+        flex-direction: column;
+    }
+
+    .client {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-main {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ============================= */
+/* LAPTOP (993px - 1200px) */
+/* ============================= */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    .icon {
+        width: 30%;
+    }
+
+    .gallery .card {
+        width: 100%;
+    }
+
+    .product {
+        width: 30%;
+    }
+
+    .product-1 {
+        width: 30%;
+    }
+
+    .pro {
+        width: 30%;
+    }
+}
 </style>
 <body>
     <div class="nav-table">
@@ -731,7 +947,12 @@ color:rgb(red, green, blue);
    <i class="fa-solid fa-user"></i>
     </div>
     </nav>
-<!-- main page -->
+
+
+
+
+
+ <!-- main page  -->
 <div class="main">
     <div class="content">
         <p class="h1">100% Organic Foods</p>
@@ -742,7 +963,10 @@ color:rgb(red, green, blue);
         <img src="Fruits/hero-img-1.png" alt="">
     </div>
 </div>
-<!-- icon section -->
+
+
+ 
+ <!-- icon section  -->
 <div class="main-icon">
     <div class="icon">
         <div class="one"><i class="fa-solid fa-bag-shopping"></i></div>
@@ -768,6 +992,10 @@ color:rgb(red, green, blue);
         <p>support every time fast</p>
     </div>
 </div>
+
+
+
+
 <!-- organic good head -->
 <div class="organic-food">
     <div class="our">
@@ -781,6 +1009,10 @@ color:rgb(red, green, blue);
         <button>Meat</button>
      </div>
 </div>
+
+
+
+  
 <!-- organi food gallery -->
 <div class="gallery">
     <div class="card">
@@ -895,7 +1127,11 @@ color:rgb(red, green, blue);
 
      </div>
     </div>
-<!-- position -->
+
+
+
+<!-- 
+position 
     <div class="posi">
         <div class="box">
             <img src="Fruits/featur-1.jpg" alt="">
@@ -926,7 +1162,11 @@ color:rgb(red, green, blue);
             </div>
         </div>
     </div>
-<!-- fresh vegtables -->
+
+
+
+
+ fresh vegtables
     <h1 class="fresh-head">Fresh Organic Vegetables</h1>
     <p class="arrow"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-arrow-left"></i></p>
      
@@ -986,7 +1226,12 @@ color:rgb(red, green, blue);
                 <p>$4.99/kg<button class="cart"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button></p> 
             </div>
         </div>
-<!-- fresh eotic frutis -->
+
+
+
+
+
+fresh eotic frutis
         <div class="back">
             <div class="part-1">
                 <h1>Fresh Exotic Frutis</h1>
@@ -1008,8 +1253,13 @@ color:rgb(red, green, blue);
             </div>
         </div>
     </div>
-    </div>
-    <!-- best seller -->
+    </div> 
+
+
+
+
+
+best seller 
     <h1 class="center-1">BestSeller Products</h1>
     <p class="center-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Iusto, necessitatibus similique sint fuga adipisci enim eius,<br>
     porro molestiae quaerat, harum pariatur mollitia sed! Dicta saepehcxsimilique sed, consequuntur obcaecati corrupti!</p>
@@ -1128,7 +1378,12 @@ color:rgb(red, green, blue);
         </div>
     </div>
     </div>
-<!-- profile -->
+
+
+
+
+
+ profile 
     <div class="profile">
         <div class="pro">
             <p><i class="fa-solid fa-users"></i></p>
@@ -1154,7 +1409,11 @@ color:rgb(red, green, blue);
             <h2>700</h2>
         </div>
     </div>
-<!-- our testimonial -->
+
+
+
+
+ our testimonial 
     <h3 class="our-1">Our Testimonial</h3>
     <h1 class="our-1">Our Client Saying!</h1>
     <p class="arrow"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-arrow-left"></i></p>
@@ -1252,6 +1511,6 @@ color:rgb(red, green, blue);
     <div class="a1">
     <p><center>@copyright2025.Fruits & Vegetables</center></p>
     </div>
-</footer>
+</footer> -->
 </body>
 </html>
